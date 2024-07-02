@@ -35,7 +35,7 @@ public class AlumnoController {
 	
 	@GetMapping("/alumno/{id}")
 	@ResponseStatus(HttpStatus.OK)
-	public Alumno getAlumnoById(@RequestBody Alumno alumno, @PathVariable Long id) {
+	public Alumno getAlumnoById(@PathVariable Long id) {
 		return service.findById(id);
 	}
 	
