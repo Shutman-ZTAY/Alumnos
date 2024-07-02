@@ -45,13 +45,13 @@ public class AlumnoController {
 		return service.create(alumno);
 	}
 	
-	@PutMapping("alumno/{id}")
+	@PutMapping("/alumno/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public Alumno updateAlumno(@PathVariable Long id, @RequestBody Alumno alumno) {
 		return service.update(alumno);
 	}
 	
-	@DeleteMapping("alumno/{id}")
+	@DeleteMapping("/alumno/{id}")
 	public void deleteAlumno(@PathVariable Long id) {
 		service.delete(id);
 	}
